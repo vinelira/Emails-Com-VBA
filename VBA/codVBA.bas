@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "MÃ³dulo1"
 Sub script()
     Planilha1.Select
     
@@ -32,10 +32,9 @@ Sub script()
             .CC = CC
             .Subject = assunto
             .body = texto
-            .attachments.Add (ThisWorkbook.Path) & "\" & Cells(linha, 1).Value & ".pdf"
-            
-            
+            .attachments.Add (ThisWorkbook.Path) & "\" & Cells(linha, 1).Value & ".pdf"           
             .send
+                    
         End With
         
         Application.Wait (Now + TimeValue("00:00:04"))
